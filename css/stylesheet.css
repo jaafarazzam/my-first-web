@@ -1,0 +1,798 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+.header-image{
+    display: block;
+}
+.page1{
+    height: 100vh;
+}
+.header{
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    height: 60px;
+    background-color: grey;
+    opacity: 0.7;
+}
+.header-content{
+    width: 80%;
+    margin: auto;
+    height: 60px;
+}
+.header-image{
+    width: 40%;
+    height: 60px;
+float: left;
+}
+.logo{
+    width: 80px;
+    height: 60px;
+}
+.header-list{
+    width: 60%;
+    height: 60px;
+    float: left;
+    text-align: right;
+    font-size: 25px;
+    position: relative;
+}
+.list1{
+list-style: none;
+display: inline-block;
+opacity: 0.7;
+text-transform: capitalize;
+}
+.header-list a{
+    color: purple;
+    padding: 12px;
+    display: block;
+    text-decoration: none;
+}
+.list1::after{
+    content: "";
+    width: 0;
+    height: 5px;
+    display: block;
+    background-color:black;
+    transition: .5s;
+}
+
+.list1:hover::after{
+    width: 100%;
+    height: 5px;
+    opacity: 1;
+    transition: 0.5s;
+}
+.list1:hover{
+    opacity: 1;
+    text-shadow: black;
+}
+.list1::before{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 5px;
+    display: block;
+    border-top: 5px solid black;
+    transition: 0.5s;
+    opacity: 0;
+}
+.list1:hover::before{
+opacity: 1;
+width:83px;
+height: 10px;
+transition: .5s;
+}
+/* ////////////////////////////////////////////////////////////////////////////////////heeader///////////////////////////////////////////////////////////////////////////// */
+
+.page1{
+    height: 100vh;
+    background-image: url(../images/OIP.jpg);
+    position: relative;
+    opacity: 1;
+}
+.page1-overlay{
+position: absolute;
+top: 0;
+left: 0;
+background-color: black;
+opacity: 0.7;
+width: 100%;
+height: 100%;
+}
+.page1-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    width: 65%;
+}
+.page1-title{
+    font-size: 70px;
+    color: white;
+    text-transform: uppercase;
+}
+.page1-paragraph{
+    font-size: 30px;
+    color: white;
+    text-transform: lowercase;
+}
+.page1-bot1{
+width: 150px;
+height: 75px;
+border-radius: 10px;
+font-size: 20px;
+cursor: pointer;
+padding: 15px 10px;
+text-transform: capitalize;
+}
+.learn{
+  background-color: rgb(157, 0, 255);
+  color: white;
+}
+.page1-bot1:hover{
+opacity: 0.7;
+}
+/* ////////////////////////////////////////////////////////////////////////////////////////////page1////////////////////////////////////////////////////////////////////////////////// */
+
+.page2{
+padding: 90px 0px;
+}
+.page2-title{
+    text-align: center;
+    font-size: 50px;
+}
+.lines{
+    display: block;
+    width: 70px;
+    height: 3px;
+    background-color: black;
+    margin: 0 auto 70px auto;
+}
+.page2-divs{
+    width: 80%;
+    margin: auto;
+    height: 400px;
+}
+.page2-div{
+    height: 300px;
+    width: 30%;
+    border: 1px solid black;
+    float: left;
+    border-radius: 20px;
+    text-align: center;
+    padding: 25px 12px;
+    position: relative;
+    transition: 1s;
+}
+.di{
+    margin: 0px 5%
+}
+.shape-page2{
+    font-size: 50px;
+    transition: 1s;
+}
+.page2-div-title{
+    font-size: 35px;
+    padding-top: 25px;
+}
+.page2-div-parag{
+    font-size: 20px;
+    padding: 20px 0px;
+}
+.page2-div-link{
+    text-decoration: underline purple;
+    font-size: 30px;
+    color: purple;
+}
+.page2-div::after{
+position: absolute;
+content: "";
+width: 0;
+height: 0;
+top: 0;
+left: 0;
+background-color: black;
+transition: 1s;
+opacity: 0;
+}
+.page2-div:hover::after{
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    z-index: -1;
+}
+.page2-div:hover{
+    color: white;
+}
+.page2-div:hover .shape-page2{
+    color: purple;
+}
+/* ////////////////////////////////////////////////////////////////////////////page2//////////////////////////////////////////////////////////////////////////////////////////// */
+
+.page3{
+    height: 1400px;
+background-color: grey;
+padding-top:100px ;
+}
+.page3-head{
+    text-align: center;
+}
+.page3-title{
+    font-size: 50px;
+}
+.page3-divs{
+    width: 80%;
+    margin: auto;
+}
+.page3-div1{
+    width: 30%;
+    height: 500px;
+    float: left;
+    margin-bottom: 70px;
+    display: inline-block;
+    position: relative;
+    background-image: url(../images/OIP\ \(1\).jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 350px;
+}
+.p3{
+    margin: 0px 5%;
+}
+.page3-overlay{
+    position: absolute;
+top: 0;
+left: 0;
+background-color: black;
+opacity: 0;
+visibility: hidden;
+width: 100%;
+height: 100%;
+transition: 1s;
+
+}
+.content-of-overlay {
+    width: 50%;
+    height: 50%;
+    margin-left: 25%;
+    margin-top: 35%;
+    text-align: center;
+}
+.content-of-overlay h2{
+    color: purple;
+    text-align: center;
+    font-size: 40px;
+    transition: top 1s ;
+    transition-delay: 0.3s;
+}
+.content-of-overlay p{
+    color: purple;
+    text-align: center;
+    font-size: 25px;
+}
+.content-of-overlay a i{
+    line-height: 40px;
+    color: purple;
+    font-size: 25px;
+}
+.content-of-overlay a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color:white;
+    position: relative;
+    top: 15px;
+    opacity: 1;
+    visibility: visible;
+    transition: top 1s ,opacity .5s;
+    transition-delay: .6s;
+}
+.page3-div1:hover .page3-overlay{
+    visibility: visible;
+    opacity: 0.9;
+    transition: 1s;
+}
+/* //////////////////////////////////////////////////////////////////////////////////////////////page3//////////////////////////////////////////////////////////////////////////////// */
+.page4{
+    height: 850px;
+}
+.page4-head{
+    text-align: center;
+}
+.page4-content{
+    padding-top: 100px; 
+    width: 80%;
+    margin: auto;
+}
+.page4-head h2{
+    font-size: 50px;
+}
+.page4-div1{
+    width: 28%;
+    height: 225px;
+    float: left;
+    border: 1px solid black;
+    padding: 20px 20px 20px 80px;
+    position: relative;
+}
+.page4-div1 i{
+    position: absolute;
+    left: 15;
+    top: 30;
+    font-size: 40px;
+    color: purple;
+}
+.page4-div1 h2{
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+.page4-div1 p{
+margin-top: 10px;
+font-size: 20px;
+color: grey;
+}
+.p4{
+    margin: 0px 8%;
+}
+.pp4{
+    margin-bottom: 80px; ;
+}
+.page4-div1::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: black;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0;
+    transition: 1s;
+    z-index: -1;
+}
+.page4-div1:hover::after{
+    opacity: 1;
+    height: 100%;
+    width: 100%;
+}
+.page4-div1:hover{
+    color: white;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////page4//////////////////////////////////////////////////////////////////// */
+.page5{
+background-color: grey;
+padding: 200px 0px;
+height: 800px;
+}
+.page5-content{
+    width: 80%;
+    margin: auto;
+}
+.page5-left-side{
+    width: 50%;
+    float: left;
+}
+.page5-left-side span{
+    display: block;
+    width: 70px;
+    height: 3px;
+    background-color: black;
+}
+.page5-left-side h2{
+    font-size: 50px;
+}
+.page5-left-side p{
+    font-size: 25px;
+    padding: 70px 0px;
+}
+.page5-left-side ul{
+    list-style: none;
+    font-size: 25px;
+}
+.page5-left-side li{
+margin: 15px 0px;
+}
+.page5-right-side{
+    width: 50%;
+    float: left;
+}
+.dot1{
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background-color: white;
+    margin: 10px 5px;
+    border-radius: 50%;
+}
+.dots{
+    list-style: none;
+    text-align: center;
+}
+.dot1:hover{
+    background-color: purple;
+}
+/* /////////////////////////////////////////////////////////////////////////////////////////page5//////////////////////////////////////////////////////////////////////////////////////////////// */
+.page6{
+    position: relative;
+    background-image: url(../images/store.jpg);
+    height: 350px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.page6-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.7);
+}
+.page6-content{
+    width: 80%;
+    margin: auto;
+    padding: 120px 0px;
+}
+.page6-div1{
+width: 25%;
+float: left;
+text-align: center;
+}
+.page6-div1 i{
+font-size: 50px;
+color: white;
+margin-bottom: 10px;
+text-transform: capitalize;
+}
+.page6-div1 h2{
+color: white;
+font-size: 40px;
+text-transform: capitalize;
+}
+.page6-div1 p{
+color: white;
+font-size: 30px;
+text-transform: capitalize;
+}
+/* ////////////////////////////////////////////////////////////////////////////////////////////////page6////////////////////////////////////////////////////////////////////////////////////////////////// */
+.page7{
+    padding-top: 120px;
+    text-align: center;
+    height: 850px;
+
+}
+.page7-content{
+    width: 80%;
+    margin: auto;
+}
+.page7-head h2{
+    font-size: 50px;
+}
+.page7-div1{
+   width: 28%;
+   height: 400px;
+   border: 4px dashed rgb(90, 89, 89);
+   float: left; 
+   padding: 40px 0px;
+   border-radius: 20px;
+   position: relative;
+   transition:1s ;
+}
+.p7{
+    margin: 0px 8%;
+}
+.page7-div1 h2{
+    font-size: 35px;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+}
+.page7-circle{
+    width: 100px;
+   height: 100px;
+   border-radius: 100%;
+   border: 1px solid;
+   margin: auto;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.page7-div1 h3{
+    font-size: 40px;
+}
+.page7-circle p{
+    font-size: 25px;
+}
+.page7-div1 p{
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+.page7-div1 button{
+background-color: white;
+width: 120px;
+height: 40px;
+border: 2px solid purple;
+background-color: rgb(167, 165, 165);
+cursor: pointer;
+}
+.page7-div1::after{
+    position: absolute;
+    content: "";
+    height: 0%;
+    width:100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 1s;
+    background-color: black;
+}
+.page7-div1:hover::after{
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    border-radius:20px;
+}
+.page7-div1:hover {
+color: purple;
+}
+/* /////////////////////////////////////////////////////////////////////////////////////////////page7/////////////////////////////////////////////////////////////////////////////////////////////// */
+.page8{
+    background-image: url(../images/d4kjpj-6177cf35-ff19-4e90-90e5-346dfbd72249\ \(1\).jpg)
+}
+.page8-content{
+    width: 80%;
+    margin: auto;
+    padding: 120px 0px;
+}
+.page8-title1{
+width: 50%;
+padding-left: 50px;
+float: left;
+position: relative;
+}
+.page8-circle img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    position: absolute;
+}
+.page8-title1 h2{
+    padding-left:130px ;
+    padding-bottom:15px;
+    color:  white;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+.page8-title1 p{
+    padding-left: 130px;
+    color: grey;
+    font-size:20px ;
+}
+.page8-last-parag {
+   
+    padding-top: 50px;
+    text-align: left;
+}
+/* //////////////////////////////////////////////////////////////////////////////////////////////page8///////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.page9{
+    padding: 100px 0px;
+}
+.page9-head{
+    text-align: center;
+}
+.page9-head h2{
+    font-size: 50px;
+}
+.page9-divs{
+    width: 80%;
+    margin: auto;
+    height: 400px;
+}
+.page9-div1{
+width: 30%;
+height: 350px;
+float: left;
+background-color: darkgray;
+text-align: center;
+position: relative;
+}
+.p9{
+    margin: 0px 5%;
+}
+.page9-d1-img{
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+}
+.page9-d1-img img{
+    width: 100%;
+}
+.p9-shape{
+line-height: 40px;
+font-size: 25px;
+display: block;
+}
+.p9-overlay a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: purple;
+    color: #fff;
+    margin-left: auto;
+        text-decoration: none;
+}
+.p9-overlay{
+    position:absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .5);
+ visibility: hidden;
+  opacity: 0; 
+  transition: 1s; 
+}
+.p9-d1-head h2{
+    font-size: 30px;
+}
+.p9-d1-head p{
+    font-size: 23px;
+    padding: 10px 0px;
+    color: grey;
+}
+.p9-overlay a i{
+    line-height: 40px;
+}
+.page9-div1::after{
+    position: absolute;
+    content: "";
+width: 100%;
+height: 0%;
+top: 0;
+left: 0;
+
+background-color:black;
+opacity: 0;
+transition: 1s;
+}
+.page9-div1:hover::after{
+   width: 100%;
+   height: 100%;
+   opacity: 0.4;
+   transition: 1s;
+}
+.page9-div1:hover .p9-overlay{
+    visibility: visible;
+  opacity:1;  
+  
+}
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////page9///////////////////////////////////////////////////////////////////////////// */
+.page10{
+    padding-top: 100px;
+}
+.page10-head h2{
+    text-align: center;
+    font-size: 50px;
+}
+.page10-divs{
+    width: 80%;
+    margin: auto;
+    height: 500px;
+}
+.page10-div1{
+    width: 31%;
+    float: left;
+    /* background-color: #7ba7ff; */
+    height: 500px;
+}
+.p10{
+    margin: 0px 3.5%;
+}
+.page10-div1 img{
+display: block;
+}
+.what-in-the-div{
+    width: 80%;
+    padding-left: 20px;
+    position: relative;
+    border: 2px dashed grey;
+    border-radius: 20px;
+    transition: 1s;
+}
+.what-in-the-div i{
+    padding: 20px 0px;
+}
+.what-in-the-div h2{
+    text-transform: capitalize;
+    padding-bottom: 15px;
+}
+.what-in-the-div a{
+    text-decoration: none;
+    color: black;
+    margin: 20px 0px;
+    font-size: 25px;
+    text-decoration: underline black;
+}
+.what-in-the-div p{
+    line-height: 2;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+.what-in-the-div::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background-color: purple;
+    opacity: 0;
+    transition: 1s;
+    border-radius: 20px;
+    z-index: -1;
+}
+.what-in-the-div:hover::after{
+    opacity: 1;
+    height: 100%;
+    width: 100%;
+}
+.what-in-the-div:hover{
+    color: white;
+}
+.what-in-the-div:hover a{
+    color: white;
+    text-decoration: underline white;
+}
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////page10/////////////////////////////////////////////////////////////////////////////////// */
+
+.foot{
+height: 350px;
+width: 100%;
+background-color: rgb(67, 67, 67);
+}
+.foot-content{
+width: 30%;
+text-align: center;
+margin: auto;
+padding: 75px 0px;
+}
+.foot-image{
+    margin-bottom: 20px;
+}
+.p11{
+    font-size: 30px;
+    color: black;
+}
+.foot-mark ul{
+    list-style: none;
+    margin: 20px 0px;
+}
+.foot-mark li{
+    display: inline-block;
+    background-color: purple;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    z-index: 1;
+    border-radius: 50%;
+}
+.foot-mark i{
+    line-height: 50px;
+    color: white;
+}
+.foot-final-sentence{
+    color: grey;
+}
+.foot-mark a:hover {
+    opacity: 0.7;
+}
+
+
